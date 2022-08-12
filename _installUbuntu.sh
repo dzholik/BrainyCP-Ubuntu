@@ -1,10 +1,5 @@
 #! /bin/bash
 
-if [ -f "/var/brainycp/license" ]; then
-    echo -e "\033[1;31m The panel is already installed. Re-installation is detrimental to the system!!!\033[0m\n\n";tput sgr0
-    exit 1
-fi
-
 clear
 
 if [ ! -f "/etc/os-release" ]; then
