@@ -723,7 +723,7 @@ if [[ $ver == "Ubuntu__" ]];then
     osUbuntu="yes"
     apt-get install -y --force-yes wget &>/dev/null
     echo -en "Detected Download install script... "
-    wget -t 2 http://core.brainycp.ru/_installUbuntu.sh  &>/dev/null
+    wget -t 2 https://github.com/dzholik/BrainyCP-Ubuntu/blob/main/_installUbuntu.sh  &>/dev/null
 	if [ $? -eq 0 ]; then
 		result=0
 		echo -en "\033[1;32m [OK] \033[0m\n"
