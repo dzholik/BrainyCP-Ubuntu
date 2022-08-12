@@ -49,7 +49,7 @@ case "${os_type}" in
                 echo 'Trigger 20.04'
                 apt-get install -y --force-yes wget &>/dev/null
                 echo -en "Detected Download install script... "
-                wget -t 2 http://core.brainycp.ru/_installUbuntu.sh  &>/dev/null
+                wget -t 2 https://github.com/dzholik/BrainyCP-Ubuntu/blob/main/_installUbuntu.sh  &>/dev/null
                 if [ $? -eq 0 ]; then
                         echo -en "\033[1;32m [OK] \033[0m\n";tput sgr0
                 else
